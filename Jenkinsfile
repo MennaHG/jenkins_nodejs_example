@@ -15,12 +15,12 @@ pipeline {
             }
         }
 
-       /* stage('CD') {
+         stage('CD') {
             steps {
                sh "echo ${DOCKERHUB_CREDENTIALS_PSW} | docker login -u mennahg --password-stdin"
                 sh "docker run -d -p 3000:3000 mennahg/nodeapp:v1"
             }
-        }*/
+        }
 
         
     }
